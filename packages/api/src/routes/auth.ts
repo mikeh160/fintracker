@@ -20,7 +20,7 @@ router.post("/webhook", async (req: Request, res: Response) => {
       "svix-id": svixId,
       "svix-timestamp": svixTimestamp,
       "svix-signature": svixSignature,
-    }) as any;
+    }) as { type: string; data: { id: string } };
 
     if (payload.type === "user.created") {
       console.log("user.created:", payload.data.id);

@@ -16,5 +16,9 @@ app.use("/api/accounts", accountRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/categories", categoryRoutes);
 app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
-app.listen(env.PORT, () => console.log(`api listening on port ${env.PORT}`));
+app.use((err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+  console.error(err);
+  res.status(500).json({ error: "internal server error" });
+});
+app.listen(env.PORT, () => console.log('api listening on port ' + env.PORT));
 export default app;

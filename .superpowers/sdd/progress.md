@@ -1,0 +1,6 @@
+Task 1: complete (commit f7d9491, scaffolding ✅)
+Task 2: complete (commit 07324cf, shared schemas ✅)
+Task 3: complete (commit 610b55c, DB schema ✅)
+Task 4: complete (auth middleware + webhook ✅)
+Task 5: complete (commit 71eb2e2, API routes ✅)
+Task 6: complete (commit 22a685a, mobile app ✅)
