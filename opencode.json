@@ -8,6 +8,15 @@
       "headers": {
         "CONTEXT7_API_KEY": "ctx7sk-a2412af7-78a9-4850-aa4b-a91f0d0992f6"
       }
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
     }
   },
   "agent": {
