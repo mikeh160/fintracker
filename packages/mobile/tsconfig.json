@@ -3,8 +3,15 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "strict": true,
-    "paths": { "@/*": ["./src/*"] },
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "rootDir": "."
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
