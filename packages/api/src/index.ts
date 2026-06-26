@@ -1,0 +1,20 @@
+import "dotenv/config";
+import express from "express";
+import type { Express } from "express";
+import cors from "cors";
+import { env } from "./env.js";
+import authRoutes from "./routes/auth.js";
+import accountRoutes from "./routes/accounts.js";
+import transactionRoutes from "./routes/transactions.js";
+import categoryRoutes from "./routes/categories.js";
+
+const app: Express = express();
+app.use(cors());
+app.use(express.json());
+app.use("/api/auth", authRoutes);
+app.use("/api/accounts", accountRoutes);
+app.use("/api/transactions", transactionRoutes);
+app.use("/api/categories", categoryRoutes);
+app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
+app.listen(env.PORT, () => console.log(`api listening on port ${env.PORT}`));
+export default app;
