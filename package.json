@@ -1,0 +1,9 @@
+{
+  "name": "fintracker",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter @fintracker/api dev",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint"
+  }
+}

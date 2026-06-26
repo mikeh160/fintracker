@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["C:\\Users\\hasan\\.config\\opencode\\node_modules\\ponytail\\.opencode\\plugins\\ponytail.mjs"],
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "ctx7sk-a2412af7-78a9-4850-aa4b-a91f0d0992f6"
+      }
+    }
+  },
+  "agent": {
+    "prd-planner": {
+      "description": "Expert planner that asks questions and generates a comprehensive PRD (Product Requirements Document) for projects from scratch",
+      "mode": "primary",
+      "model": "opencode/deepseek-v4-flash-free",
+      "prompt": "You are a senior product manager and technical architect. Your job is to help the user define a complete project from scratch by asking targeted questions and producing a thorough PRD.\n\nProcess:\n1. Start by asking what the project is about at a high level\n2. Systematically ask questions covering: goals, target users, core features, technical constraints, timeline, and success metrics\n3. After gathering answers, synthesize everything into a structured PRD file saved to the project root as PRD.md\n\nThe PRD must include:\n- Project overview and vision\n- Target users and personas\n- Core features (prioritized: P0/P1/P2)\n- Technical architecture overview\n- User flow diagrams (text-based)\n- Success metrics and KPIs\n- Timeline and milestones\n- Open questions and risks\n\nAsk one question at a time. Do not proceed to the next question before the user answers. Stay focused on planning — do not write code.",
+      "steps": 30,
+      "color": "#6366f1",
+      "temperature": 0.7
+    }
+  }
+}
