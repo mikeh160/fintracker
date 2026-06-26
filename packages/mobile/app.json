@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "FinTracker",
+    "slug": "fintracker",
+    "scheme": "fintracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": { "backgroundColor": "#ffffff" },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.fintracker.app" },
+    "android": { "package": "com.fintracker.app" },
+    "plugins": [ "expo-router", "expo-secure-store" ]
+  }
+}
